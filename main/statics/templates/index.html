@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block head %}
+    <title>{{app_name}} | PeerConnection  </title>
+    {% comment %} <script defer src = 'https://code.jquery.com/jquery-3.7.1.min.js'></script> {% endcomment %}
+    <script defer src = "{% static '/js/jquery.js' %}"></script>
+    <script defer src ="{% static '/js/main.js' %}"></script>
+    <script defer src ="{% static '/js/voice-recorder.js' %}"></script>
+    <script defer src ="{% static '/js/sendFiles.js' %}"></script>
+
+    {% endblock head %}
+
+{% block content %}
+    
+        
+            <div class = 'container' id = 'the-container'>
+                
+               <img id = 'logo' width = '500px'; height = '500px' alt = 'logo' src ="{% static 'imgs/newlogo.svg' %}"/>
+
+                <div class = 'content'>
+                    <div class = 'desc'>
+                            <span class = 'wl'>WELLCOME TO {{app_name}} !</span>
+                            <span class = 'desc'>Free Random <span>Video</span> & <span>text</span> Chat , meet New People !</span>
+                    </div>
+                    <div id = 'tags'>                        
+                        <input placeholder = 'what are your interests ? ' id = 'add_tag'/>
+                    </div>
+                    <span class = 'sc'>START CHAT</span>
+                    <div class = 'buttons'>
+                        <button id = 'text-chat'>text</button>
+                        or
+                        <button id = 'video-chat'>video</button>
+                    </div>
+                    <div class = 'terms' >
+                        <input type = 'checkbox' id = 'terms-check-box' />
+                        <label for = 'terms-check-box'>I confirm I have read and agree to the <a href="rules">Community Guidelines</a> and <a href="terms/">Terms of Service</a>. I certify I am at least 18 years old and I have reached the age of majority in my location.</label>
+                    </div>
+
+                <div> 
+
+
+            </div>  
+
+
+
+          {% comment %} <div class = 'overlay'>
+            <div class = 'change-tags-section'>
+                <div class = 'title'>Add & Remove your Interests using the box below :<span id = 'close-btn' class = 'close'>x</span></div>
+                    <div class = 'skeleton'><div id = 'tags'>
+                        <div class = 'tag'>tiktok</div>
+                        <input placeholder = 'Add new interests ...' id = 'add_tag'/>
+                    </div>
+                </div>
+                <div class = 'buttons'> <button id = 'save-btn'>Save</button></div>
+            </div>
+          </div> {% endcomment %}
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link defer href = "{% static '/css/rules.css' %}" rel = 'stylesheet' media = 'all'>
+{% endblock head %}
+{% block content %}
+    <diV class = 'rules'>
+        <h1>Community Guidelines</h1>
+        <br/>
+        <span >It is required for all users of {{app_name|lower}}’s website to acknowledge and agree to the following.</span>
+        <hr class = 'small'/>
+        <span style = 'font-size :15px'>{{app_name|lower}} prohibits access and use of all its services by anyone under 18 years of age.</span>
+        <hr class = 'small' />
+        <ul>
+
+            <li>Do not use {{app_name|lower}} if you are under 18 years old.</li>
+            <li>Please refrain from having conversations of sexual nature.</li>
+            <li>Do not transmit nudity or behave in a way that is inappropriate or illegal in nature.</li>
+            <li>Harassment, racism, sexism, bullying, and excessive vulgarity will not be tolerated. If anyone is making you uncomfortable, please disconnect from the chat.</li>
+            <li>Spamming our chat rooms is not allowed. This includes excessively posting links/phrases and promoting or advertising products/services. For more information please visit <a target = "_blank" href = 'https://en.wikipedia.org/wiki/Spamming'>Wikipedia’s entry on ‘Spamming’</a>.</li>
+            <li>Do not create or use automated programs to start chats on our website or app.</li>
+            <li>The primary language of {{app_name|lower}} is English, so please keep chats in English as much as possible. You may use your translation tool on your browser to have cross-language conversations. Additionally, try our ‘Interest’ feature to meet others who may speak different tongues. For example, try entering keywords like, ‘French’, ‘Spanish’, ‘German’, ‘Mandarin’, ‘Russian’ etc.</li>
+            <li>Do not attempt to hack our website or spread malware.</li>
+            <li>Do not transmit disgusting, shocking, violent situations or illegal content of any kind.</li>
+            <li>Do not share peoples’ private information. In addition, please be careful discussing information about yourself. This includes names, ages, locations, or social media accounts.</li>
+            <li>Transmitting anything that may defame or damage someone’s reputation is not allowed.</li>
+            <li>Violating intellectual property rights on our platform will not be tolerated.</li>
+
+        </ul>
+        <hr class = 'small' />
+        <span>{{app_name|lower}} keeps internal logs of discussions for moderation purposes.</span>
+        <span>Users caught breaking these rules will be banned from our chat rooms.</span>
+    </diV>
+{% endblock content %}

@@ -1,0 +1,36 @@
+div.wrapper > div.basic-sec{
+        background-color: lavender;
+}
+div.rules { 
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    padding :40px 20%;
+
+}
+div.rules ul {
+    /* background-color: red; */
+    margin-top :20px;
+    width : 100%;
+}
+div.rules ul li { 
+  margin-bottom :   1em
+}
+div.wrapper > div.basic-sec > header { 
+    /* background-color: var(); */
+    border-bottom : 1px solid #c7c6c6ac;
+    min-height : 70px;
+    justify-content: center;
+    align-items: center;
+}
+div.wrapper > div.basic-sec > header > span.logo { 
+    color : var(--off-white)
+}
+
+span#online-count { 
+    display: none;
+}
